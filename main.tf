@@ -1,8 +1,3 @@
-
-provider "aws" {
-  region = var.region_name
-}
-
 #Add security group to allow port 22 and 8080 traffic
 resource "aws_security_group" "TF_SG" {
   name        = var.sg_name
